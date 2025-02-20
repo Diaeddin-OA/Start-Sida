@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;/* إزالة التباعد الافتراضي حول العناصر */
+    margin: 0;/* إزالة الهوامش الافتراضية */
+
+    box-sizing: border-box;/* جعل قياسات العناصر تتضمن الحدود والحشوة */
+    font-family: sans-serif;/* تحديد خط الكتابة الافتراضي */
+}
+
+.contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(bild15.avif) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.contanier .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0 20px;
+    background-color: rgba(255,255,255,0.1);
+    z-index: 10;
+    border: solid rgba(255,255,255,0.7);
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10 , 10 , 10 , 0.15);
+}
+
+.contanier::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #c1d9fb;
+    transform: translate(180px,150px);
+    border-radius: 50%;
+}
+.contanier .box nav{
+    width: 95%;
+    height: 7%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+}
+.contanier .box nav ul li{
+    display: inline-block;
+    padding: 0 6px ;
+}
+.contanier .box nav ul li{
+    text-decoration: none;
+    font-size: 12px;
+    color: #242329;
+    transition: 0.4s;
+}
+.contanier .box nav ul li a{
+    color: #6f34fe;
+    text-decoration: none;
+}
+
+.contanier .box nav ul li a:hover{
+color: #7c8bd1;
+font-size: 20px;
+}
+
+nav .logo{
+    font-size: 35px;
+    color: #242329;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.contanier .box .contains{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 8%;
+}
+
+.contanier .box .contains .section-1{
+    position: relative;
+    width: 40%;
+}
+
+.contains .section-1 h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #242329;   
+}
+ 
+.contains .section-1 h3{
+    font-size: 24px;
+    color: #6f34fe;
+    font-size: 21px;
+}
+
+.contains .section-1 p{
+    font-size: 100%;
+    color: #505052;
+    margin-bottom: 50px;
+}
+
+.contains .section-1 .btn{
+    padding: 15px 10px;
+    background-color: #6f34fe;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 500px;
+    text-decoration: none;
+    transition: 0.36s;
+}
+
+.contains .section-1 .btn:hover{  /*contact me */
+    background-color: #fff;
+    color: #6f34fe;
+}
+
+.contains .section-2{
+    width: 35%;
+    margin-right: 50px;
+}
+
+.contains .section-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contains .section-3{
+    position: absolute;
+    left: 0.1%;
+    bottom: 0.1%;
+    z-index: 5;  /* اجعل الأيقونات تظهر فوق العناصر الأخرى داخل القسم */
+}
+
+.contains .section-3 a i{
+    font-size: 35px;
+    margin: 0;
+    padding: 10px;
+    color: #7c8bd1;
+    transition: 0.3s;
+
+}
+.contains .section-3 a i:hover{
+    color: #6f34fe;
+} 
